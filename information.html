@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Details</title>
+    <style>
+      /* Main section styling */
+      section.main {
+        background-color: #f5f5f5;
+        padding: 50px 0;
+      }
+
+      /* General container styling */
+      .container-fluid {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Title Styling */
+      h2.text-center {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      /* Paragraph Styling */
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #34495e;
+      }
+
+      /* Classes Offered Section Styling */
+      .class-details {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .class-program h4 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #3498db;
+        margin-bottom: 10px;
+      }
+
+      .class-program p {
+        font-size: 15px;
+        color: #7f8c8d;
+        margin-bottom: 15px;
+      }
+
+      /* Faculty Section Styling */
+      .faculty-details {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .faculty-member {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+
+      .faculty-member h4 {
+        font-size: 20px;
+        color: #2980b9;
+        margin-bottom: 5px;
+      }
+
+      .faculty-member p {
+        font-size: 14px;
+        color: #7f8c8d;
+      }
+
+      .faculty-member:last-child {
+        border-bottom: none;
+      }
+
+      /* Styling for faculty images */
+      .faculty-member img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .faculty-info {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Customizing the main section titles */
+      h3 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: #2c3e50;
+      }
+
+      /* Adding margin and padding to section rows */
+      .row {
+        margin-top: 30px;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .container-fluid {
+          padding: 0 20px;
+        }
+
+        h2.text-center {
+          font-size: 28px;
+        }
+
+        .class-program h4,
+        .faculty-member h4 {
+          font-size: 18px;
+        }
+
+        .class-program p,
+        .faculty-member p {
+          font-size: 14px;
+        }
+
+        .faculty-member img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="main">
+        <div class="container-fluid">
+          <!-- Department Information -->
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center">Department of Information Technology</h2>
+              <p>
+                The Department of Information Technology is the offshoot of
+                Punjab University College of Information Technology (PUCIT) with
+                the aim to provide a state of the art learning environment to
+                the youth of the nation. The history of PUCIT dates back to 1987
+                when the Department of Computer Science was established at the
+                University of the Punjab, Lahore. The Department of IT offers BS
+                in Information Technology, BS Computer Science and M.Sc in
+                Information Technology Programs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Classes Offered Section -->
+          <div class="row">
+            <div class="col-md-5 mt-5 ms-3">
+              <h3>Classes Offered</h3>
+              <div class="class-details">
+                <!-- BSCS Program -->
+                <div class="class-program">
+                  <h4>BS in Computer Science (BSCS)</h4>
+                  <p>
+                    This is a 4-year program divided into 8 semesters, designed
+                    to provide a solid foundation in computer science, including
+                    courses in algorithms, programming, databases, and software
+                    engineering.
+                  </p>
+                </div>
+                <!-- BSIT Program -->
+                <div class="class-program mt-4">
+                  <h4>BS in Information Technology (BSIT)</h4>
+                  <p>
+                    Also a 4-year program, spanning 8 semesters, focused on
+                    practical IT skills like network administration, software
+                    development, and data management to prepare students for the
+                    evolving tech landscape.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Faculty Section -->
+            <div class="col-md-6 mt-5">
+              <h3>Faculty</h3>
+              <div class="faculty-details">
+                <!-- Faculty Member 1 -->
+                <div class="faculty-member">
+                  <div class="faculty-info">
+                    <img
+                      src="./assets/img/naveed bhai.jpg"
+                      alt="Dr. Naveed Ahmad Jhamat"
+                    />
+                    <div>
+                      <h4>Dr. Naveed Ahmad Jhamat</h4>
+                      <p>
+                        <strong>Position:</strong> INCHARGE / ASSISTANT
+                        PROFESSOR
+                      </p>
+                      <p>
+                        <strong>Expertise:</strong> Ph.D in Bioinformatics from
+                        SLU, Uppsala, Sweden
+                      </p>
+                      <p><strong>Email:</strong> naveed.jhamat@pugc.edu.pk</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Faculty Member 2 -->
+                <div class="faculty-member">
+                  <div class="faculty-info">
+                    <img
+                      src="./assets/img/salman sahib.jpg"
+                      alt="Dr. Salman Naseer"
+                    />
+                    <div>
+                      <h4>Dr. Salman Naseer</h4>
+                      <p><strong>Position:</strong> ASSISTANT PROFESSOR</p>
+                      <p>
+                        <strong>Expertise:</strong> Ph.D in Computer and
+                        Information Sciences Auckland, New Zealand.
+                      </p>
+                      <p><strong>Email:</strong> salman@pugc.edu.pk</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Faculty Member 3 -->
+                <div class="faculty-member">
+                  <div class="faculty-info">
+                    <img
+                      src="./assets/img/younus sir.jpg"
+                      alt="Mr. Muhammad Younas"
+                    />
+                    <div>
+                      <h4>Mr. Muhammad Younas</h4>
+                      <p><strong>Position:</strong> ASSISTANT PROFESSOR</p>
+                      <p><strong>Expertise:</strong> M.S (Computer Science)</p>
+                      <p><strong>Email:</strong> younas100@yahoo.com</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Faculty Member 4 -->
+                <div class="faculty-member">
+                  <div class="faculty-info">
+                    <img src="./assets/img/gm.jpg" alt=" Dr. Ghulam Mustafa" />
+                    <div>
+                      <h4>Dr. Ghulam Mustafa</h4>
+                      <p><strong>Position:</strong> Assistant Professor</p>
+                      <p><strong>Expertise:</strong> Ph.D (BIT, China)</p>
+                      <p><strong>Email:</strong> gmustafa@pugc.edu.pk</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Faculty Member 5 -->
+                <div class="faculty-member">
+                  <div class="faculty-info">
+                    <img src="./assets/img/zeeshan.jpeg" alt="Zeeshan" />
+                    <div>
+                      <h4>Mr. Zeeshan Arshad</h4>
+                      <p><strong>Position:</strong> Lecturer</p>
+                      <p>
+                        <strong>Expertise:</strong>PhD (Scholar) - On Study
+                        Leave MS (CS), M.SC. (IT)
+                      </p>
+                      <p><strong>Email:</strong> Zeeshan.arshad@pugc.edu.pk</p>
+                      <p><strong>Phone:</strong> +92 332 8159859</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
